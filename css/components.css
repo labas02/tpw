@@ -1,0 +1,194 @@
+/* ===================================
+   CoffeeHub Components.css
+   Layout, hero, buttons, cards, footer
+   =================================== */
+
+/* Header */
+.header {
+     display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-block: var(--space-sm);
+  background-color: var(--color-white);
+  box-shadow: 0 0 calc(var(--grid-unit) * 2) rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+height: var(--logo-size);
+}
+
+.nav__list{
+     display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.nav a {
+  font-size: var(--text-sm);
+  margin-left: var(--space-sm);
+  color: var(--color-primary);
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: var(--color-accent);
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding-block: var(--space-xl);
+  background-color: var(--color-bg);
+}
+
+.hero__title {
+  font-size: var(--text-xxl);
+  margin-bottom: var(--space-sm);
+}
+
+.hero__description {
+  font-size: var(--text-md);
+  margin-bottom: var(--space-md);
+  color: var(--color-muted);
+}
+
+.hero__actions {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-sm);
+}
+
+/* Buttons */
+.button {
+  padding: calc(var(--grid-unit) * 3) calc(var(--grid-unit) * 6);
+  border-radius: calc(var(--grid-unit) * 2);
+  font-size: var(--text-sm);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button--primary {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.button--primary:hover {
+  background-color: var(--color-secondary);
+}
+
+.button--secondary {
+  background-color: transparent;
+  border: 1px solid var(--color-secondary);
+  color: var(--color-secondary);
+}
+
+.button--secondary:hover {
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+}
+
+.button--secondary--card:checked + .card{
+ transform: rotateY(180deg);
+}
+
+
+/* Products Grid */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(calc(var(--grid-unit) * 60), 1fr));
+  gap: var(--space-md);
+  margin-block: var(--space-xl);
+}
+
+.card {
+  position: relative;
+  perspective: 1000px;
+  padding: 10px;
+   height: var(--card-height);
+}
+
+.card:hover {
+  transform: translateY(calc(var(--grid-unit) * -1));
+}
+
+.card__front,
+.card__back {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: calc(var(--grid-unit) * 2);
+  transition: transform 0.6s ease;
+  top: 0;
+  left: 0;
+     background-color: var(--color-white);
+
+
+}
+
+.card__back {
+  transform: rotateY(180deg);
+}
+
+/* When checkbox is checked, flip the card */
+.card__toggle:checked ~ .card__front {
+  transform: rotateY(180deg);
+}
+
+.card__toggle:checked ~ .card__back {
+  transform: rotateY(0deg);
+}
+
+.card__image {
+  border-radius: calc(var(--grid-unit) * 2);
+  margin-bottom: var(--space-sm);
+  height: calc(var(--grid-unit) * 40);
+  object-fit: cover;
+}
+
+.card__title {
+  font-size: var(--text-md);
+  margin-bottom: var(--space-xs);
+}
+
+.card__description {
+  font-size: var(--text-sm);
+  color: var(--color-muted);
+  margin-bottom: var(--space-xs);
+}
+
+.card__price {
+  font-weight: bold;
+  margin-bottom: var(--space-sm);
+}
+
+.card__actions {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-xs);
+}
+
+/* About / Contact / Footer */
+section {
+  padding-block: var(--space-xl);
+}
+
+.footer {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding-block: var(--space-lg);
+  text-align: center;
+}
+
+.footer a {
+  color: var(--color-white);
+  opacity: 0.8;
+}
+
+.footer a:hover {
+  opacity: 1;
+}

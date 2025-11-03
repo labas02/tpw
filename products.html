@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoffeeHub - Prvotřídní káva z celého světa</title>
+    <meta name="description"
+        content="Objevte svět výjimečné kávy s CoffeeHub. Nabízíme prémiové kávové zrna z nejlepších plantáží světa.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/utilities.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header header--dark container">
+        <img class="logo" src="files/logo.png" alt="">
+        <!-- Navigation -->
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#domu" class="nav__link">Domů</a></li>
+                <li class="nav__item"><a href="#produkty" class="nav__link">Produkty</a></li>
+                <li class="nav__item"><a href="#o-nas" class="nav__link">O nás</a></li>
+                <li class="nav__item"><a href="#kontakt" class="nav__link">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+
+
+        <!-- Products Section -->
+        <section class="products container" id="produkty">
+            <h2 class="section-title">Naše kávy</h2>
+            <p class="section-description">
+                Vyberte si z naší pečlivě vybrané kolekce prémiových káv
+            </p>
+
+            <div class="products-grid">
+                <!-- Product Card 1 - Featured -->
+                <div class="card">
+                    <!-- Hidden checkbox controls the flip -->
+                    <input type="checkbox" id="flip-kolumbie" class="card__toggle" hidden>
+
+                    <div class="card__front">
+                        <div class="card__image">
+                            <span>Kolumbie Supremo</span>
+                        </div>!
+                        <div class="card__content">
+                            <h3 class="card__title">Kolumbie Supremo</h3>
+                            <p class="card__description">
+                                Vyvážená chuť s oříškovými tóny a jemnou aciditou. Ideální do espresso.
+                            </p>
+                            <div class="card__price">269 Kč</div>
+                            <div class="card__actions">
+                                <button class="button button--primary">Koupit</button>
+                                <!-- Clicking this flips the card -->
+                                <label for="flip-kolumbie" class="button button--secondary">Více info</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card__back">
+                         <div class="card__image">
+                            <span>Kolumbie Supremo</span>
+                        </div>
+                        <div class="card__content">
+                            <h3 class="card__title">Kolumbie Supremo</h3>
+                            <p class="card__description">
+                                Pěstováno v nadmořské výšce 1800 m. Pražené na střední stupeň, ideální pro espresso.
+                            </p>
+                            <div class="card__actions">
+                                <!-- Clicking this flips it back -->
+                                <label for="flip-kolumbie" class="button button--secondary">Zpět</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 2 -->
+              <div class="card">
+                    <!-- Hidden checkbox controls the flip -->
+                    <input type="checkbox" id="1" class="card__toggle" hidden>
+
+                    <div class="card__front">
+                        <div class="card__image">
+                            <span>Kolumbie Supremo</span>
+                        </div>
+                        <div class="card__content">
+                            <h3 class="card__title">Kolumbie Supremo</h3>
+                            <p class="card__description">
+                                Vyvážená chuť s oříškovými tóny a jemnou aciditou. Ideální do espresso.
+                            </p>
+                            <div class="card__price">269 Kč</div>
+                            <div class="card__actions">
+                                <button class="button button--primary">Koupit</button>
+                                <!-- Clicking this flips the card -->
+                                <label for="1" class="button button--secondary">Více info</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card__back">
+                        <div class="card__content">
+                            <h3 class="card__title">Kolumbie Supremo</h3>
+                            <p class="card__description">
+                                Pěstováno v nadmořské výšce 1800 m. Pražené na střední stupeň, ideální pro espresso.
+                            </p>
+                            <div class="card__actions">
+                                <!-- Clicking this flips it back -->
+                                <label for="1" class="button button--secondary">Zpět</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 3 - Featured -->
+                 <div class="card">
+                    <!-- Hidden checkbox controls the flip -->
+                    <input type="checkbox" id="2" class="card__toggle" hidden>
+
+                    <div class="card__front">
+                        <div class="card__image">
+                            <span>Kolumbie Supremo</span>
+                        </div>
+                        <div class="card__content">
+                            <h3 class="card__title">Kolumbie Supremo</h3>
+                            <p class="card__description">
+                                Vyvážená chuť s oříškovými tóny a jemnou aciditou. Ideální do espresso.
+                            </p>
+                            <div class="card__price">269 Kč</div>
+                            <div class="card__actions">
+                                <button class="button button--primary">Koupit</button>
+                                <!-- Clicking this flips the card -->
+                                <label for="2" class="button button--secondary">Více info</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card__back">
+                        <div class="card__content">
+                            <h3 class="card__title">Kolumbie Supremo</h3>
+                            <p class="card__description">
+                                Pěstováno v nadmořské výšce 1800 m. Pražené na střední stupeň, ideální pro espresso.
+                            </p>
+                            <div class="card__actions">
+                                <!-- Clicking this flips it back -->
+                                <label for="2" class="button button--secondary">Zpět</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+
+                <!-- Product Card 4 -->
+
+                 <div class="card">
+                    <!-- Hidden checkbox controls the flip -->
+                    <input type="checkbox" id="3" class="card__toggle" hidden>
+
+                    <div class="card__front">
+                        <div class="card__image">
+                            <span>Kolumbie Supremo</span>
+                        </div>
+                        <div class="card__content">
+                            <h3 class="card__title">Kolumbie Supremo</h3>
+                            <p class="card__description">
+                                Vyvážená chuť s oříškovými tóny a jemnou aciditou. Ideální do espresso.
+                            </p>
+                            <div class="card__price">269 Kč</div>
+                            <div class="card__actions">
+                                <button class="button button--primary">Koupit</button>
+                                <!-- Clicking this flips the card -->
+                                <label for="3" class="button button--secondary">Více info</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card__back">
+                        <div class="card__content">
+                            <h3 class="card__title">Kolumbie Supremo</h3>
+                            <p class="card__description">
+                                Pěstováno v nadmořské výšce 1800 m. Pražené na střední stupeň, ideální pro espresso.
+                            </p>
+                            <div class="card__actions">
+                                <!-- Clicking this flips it back -->
+                                <label for="3" class="button button--secondary">Zpět</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+     
+
+        <!-- Contact Section -->
+        <section class="contact container" id="kontakt">
+            <h2 class="section-title">Kontaktujte nás</h2>
+            <div class="contact__content">
+                <div class="contact__info">
+                    <h3 class="contact__subtitle">Navštivte nás</h3>
+                    <p class="contact__text">
+                        <strong>Adresa:</strong><br>
+                        Kávová 123<br>
+                        110 00 Praha 1
+                    </p>
+                    <p class="contact__text">
+                        <strong>Otevírací doba:</strong><br>
+                        Po-Pá: 7:00 - 20:00<br>
+                        So-Ne: 8:00 - 18:00
+                    </p>
+                    <p class="contact__text">
+                        <strong>Telefon:</strong> +420 123 456 789<br>
+                        <strong>Email:</strong> info@coffeehub.cz
+                    </p>
+                </div>
+                <div class="contact__form">
+                    <h3 class="contact__subtitle">Napište nám</h3>
+                    <form class="form">
+                        <div class="form__group">
+                            <label for="name" class="form__label">Jméno</label>
+                            <input type="text" id="name" class="form__input" required>
+                        </div>
+                        <div class="form__group">
+                            <label for="email" class="form__label">Email</label>
+                            <input type="email" id="email" class="form__input" required>
+                        </div>
+                        <div class="form__group">
+                            <label for="message" class="form__label">Zpráva</label>
+                            <textarea id="message" class="form__textarea" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="button button--primary">Odeslat zprávu</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer footer--dark container">
+        <div class="footer__content">
+            <div class="footer__section">
+                <h3 class="footer__title">CoffeeHub</h3>
+                <p class="footer__description">
+                    Váš průvodce světem kvalitní kávy od roku 2020.
+                </p>
+            </div>
+
+            <div class="footer__section">
+                <h4 class="footer__subtitle">Kontakt</h4>
+                <p class="footer__contact">Email: info@coffeehub.cz</p>
+                <p class="footer__contact">Telefon: +420 123 456 789</p>
+                <p class="footer__contact">Adresa: Kávová 123, Praha</p>
+            </div>
+
+            <div class="footer__section">
+                <h4 class="footer__subtitle">Rychlé odkazy</h4>
+                <ul class="footer__links">
+                    <li><a href="#domu" class="footer__link">Domů</a></li>
+                    <li><a href="#produkty" class="footer__link">Produkty</a></li>
+                    <li><a href="#o-nas" class="footer__link">O nás</a></li>
+                    <li><a href="#kontakt" class="footer__link">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Disclaimer -->
+        <div class="disclaimer">
+            <p class="disclaimer__text">
+                Tento web byl vytvořen jako studentský projekt. Veškeré uvedené informace a produkty jsou smyšlené a
+                nepředstavují skutečnou obchodní nabídku.
+            </p>
+            <p class="footer__copyright">
+                &copy; 2024 CoffeeHub | Poslední aktualizace: 12/2024
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+/* ===================================
+   CoffeeHub Base.css
+   Grid, colors, typography, containers
+   =================================== */
+
+:root {
+  /* Grid System */
+  --grid-unit: 4px;
+
+  /* Color Palette (from logo.png) */
+  --color-primary: rgba(49, 36, 17, 1);       /* Deep espresso */
+  --color-secondary: rgba(81, 60, 24, 1);     /* Medium roast */
+  --color-accent: rgba(132, 114, 82, 1);      /* Caramel accent */
+  --color-bg: rgba(227, 218, 201, 1);         /* Cream background */
+  --color-white: rgba(254, 254, 254, 1);      /* Neutral white */
+  --color-text: rgba(49, 36, 17, 0.9);        /* Primary text */
+  --color-muted: rgba(132, 114, 82, 0.6);     /* Muted text */
+
+  /* Typography scale (4px grid based) */
+  --text-xs: calc(var(--grid-unit) * 3.5);  /* 14px */
+  --text-sm: calc(var(--grid-unit) * 4);    /* 16px */
+  --text-md: calc(var(--grid-unit) * 5);    /* 20px */
+  --text-lg: calc(var(--grid-unit) * 6);    /* 24px */
+  --text-xl: calc(var(--grid-unit) * 8);    /* 32px */
+  --text-xxl: calc(var(--grid-unit) * 12);  /* 48px */
+
+  /* Spacing tokens */
+  --space-xs: calc(var(--grid-unit) * 2);   /* 8px */
+  --space-sm: calc(var(--grid-unit) * 4);   /* 16px */
+  --space-md: calc(var(--grid-unit) * 8);   /* 32px */
+  --space-lg: calc(var(--grid-unit) * 12);  /* 48px */
+  --space-xl: calc(var(--grid-unit) * 20);  /* 80px */
+
+  /* Layout */
+  --container-width: calc(var(--grid-unit) * 280); /* 1120px */
+  --card-height:25rem;
+  --logo-size: 7rem;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: "Inter", sans-serif;
+  font-size: var(--text-sm);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display", serif;
+  color: var(--color-primary);
+  line-height: 1.2;
+}
+
+h1 { font-size: var(--text-xxl); margin-bottom: var(--space-sm); }
+h2 { font-size: var(--text-xl); margin-bottom: var(--space-sm); }
+h3 { font-size: var(--text-lg); margin-bottom: var(--space-xs); }
+
+p { margin-bottom: var(--space-sm); }
+
+.container {
+  /*max-width: var(--container-width);*/
+  min-height: fit-content;
+  margin-inline: auto;
+  padding-inline: var(--space-sm);
+  text-align: center;
+}
