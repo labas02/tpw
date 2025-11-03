@@ -11,7 +11,9 @@
   flex-direction: column;
   padding-block: var(--space-sm);
   background-color: var(--color-white);
+  /*background-color: var(--color-primary);*/
   box-shadow: 0 0 calc(var(--grid-unit) * 2) rgba(0, 0, 0, 0.1);
+  color: var(--color-white);
 }
 
 .logo {
@@ -28,6 +30,7 @@ height: var(--logo-size);
   font-size: var(--text-sm);
   margin-left: var(--space-sm);
   color: var(--color-primary);
+  /*color: var(--color-white);*/
   transition: color 0.3s;
 }
 
