@@ -14,12 +14,10 @@
 .pd-md { padding: var(--space-md); }
 .pd-lg { padding: var(--space-lg); }
 
-/* Flex helpers */
 .flex { display: flex; }
 .flex-center { display: flex; justify-content: center; align-items: center; }
 .flex-between { display: flex; justify-content: space-between; align-items: center; }
 
-/* Grid helpers */
 .grid { display: grid; gap: var(--space-sm); }
 .grid-md { gap: var(--space-md); }
 .grid-lg { gap: var(--space-lg); }

@@ -3,7 +3,6 @@
    Layout, hero, buttons, cards, footer
    =================================== */
 
-/* Header */
 .header {
      display: flex;
   justify-content: center;
@@ -38,7 +37,6 @@ height: var(--logo-size);
   color: var(--color-accent);
 }
 
-/* Hero */
 .hero {
   text-align: center;
   padding-block: var(--space-xl);
@@ -62,7 +60,6 @@ height: var(--logo-size);
   gap: var(--space-sm);
 }
 
-/* Buttons */
 .button {
   padding: calc(var(--grid-unit) * 3) calc(var(--grid-unit) * 6);
   border-radius: calc(var(--grid-unit) * 2);
@@ -95,8 +92,6 @@ height: var(--logo-size);
  transform: rotateY(180deg);
 }
 
-
-/* Products Grid */
 .products-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(calc(var(--grid-unit) * 60), 1fr));
@@ -107,8 +102,9 @@ height: var(--logo-size);
 .card {
   position: relative;
   perspective: 1000px;
-  padding: 10px;
+  padding: var(--space-sm);
    height: var(--card-height);
+   margin: var(--space-md);
 }
 
 .card:hover {
@@ -121,8 +117,8 @@ height: var(--logo-size);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 100%;
-  height: 100%;
+  width: var(--full-width);
+  height: var(--full-width);
   backface-visibility: hidden;
   border-radius: calc(var(--grid-unit) * 2);
   transition: transform 0.6s ease;
@@ -150,7 +146,9 @@ height: var(--logo-size);
   border-radius: calc(var(--grid-unit) * 2);
   margin-bottom: var(--space-sm);
   height: calc(var(--grid-unit) * 40);
-  object-fit: cover;
+  margin-left: var(--space-sm);
+  margin-right: var(--space-sm);
+  object-fit:cover ;
 }
 
 .card__title {
@@ -170,12 +168,16 @@ height: var(--logo-size);
 }
 
 .card__actions {
-  display: flex;
-  justify-content: center;
   gap: var(--space-xs);
 }
 
-/* About / Contact / Footer */
+.card__content{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
 section {
   padding-block: var(--space-xl);
 }
