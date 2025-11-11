@@ -26,6 +26,7 @@
   --space-md: calc(var(--grid-unit) * 8);   /* 32px */
   --space-lg: calc(var(--grid-unit) * 12);  /* 48px */
   --space-xl: calc(var(--grid-unit) * 20);  /* 80px */
+  --space-massive:  calc(var(--grid-unit)*40);
 
   --full-width:100%;
 

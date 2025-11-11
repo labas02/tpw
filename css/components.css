@@ -93,10 +93,16 @@ height: var(--logo-size);
 }
 
 .products-grid {
-  display: grid;
+/*  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(calc(var(--grid-unit) * 60), 1fr));
   gap: var(--space-md);
   margin-block: var(--space-xl);
+  */
+  display: flex;
+  gap: var(--space-massive);
+  flex-wrap: wrap  ;
+  align-items: center;
+  justify-content: center;
 }
 
 .card {
@@ -104,6 +110,7 @@ height: var(--logo-size);
   perspective: 1000px;
   padding: var(--space-sm);
    height: var(--card-height);
+   width: var(--card-width);
    /*margin: var(--space-md);*/ 
 }
 
@@ -181,7 +188,7 @@ height: var(--logo-size);
 }
 
 section {
-  padding-block: var(--space-xl);
+padding-block: var(--space-xl);
 }
 
 .footer {
