@@ -31,7 +31,11 @@
 
   --container-width: calc(var(--grid-unit) * 280); /* 1120px */
   --card-height:25rem;
+  --card-width:18rem;
   --logo-size: 7rem;
+
+  --image-height:90%;
+  --image-width:92%;
 }
 
 body {

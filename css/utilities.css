@@ -17,6 +17,7 @@
 .flex { display: flex; }
 .flex-center { display: flex; justify-content: center; align-items: center; }
 .flex-between { display: flex; justify-content: space-between; align-items: center; }
+.flex-column {display: flex; justify-content: center; align-items: center; flex-direction: column;}
 
 .grid { display: grid; gap: var(--space-sm); }
 .grid-md { gap: var(--space-md); }

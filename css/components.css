@@ -104,7 +104,7 @@ height: var(--logo-size);
   perspective: 1000px;
   padding: var(--space-sm);
    height: var(--card-height);
-   margin: var(--space-md);
+   /*margin: var(--space-md);*/ 
 }
 
 .card:hover {
@@ -117,8 +117,8 @@ height: var(--logo-size);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: var(--full-width);
-  height: var(--full-width);
+  width: var(--card-width);
+  height: var(--card-height);
   backface-visibility: hidden;
   border-radius: calc(var(--grid-unit) * 2);
   transition: transform 0.6s ease;
@@ -145,9 +145,10 @@ height: var(--logo-size);
 .card__image {
   border-radius: calc(var(--grid-unit) * 2);
   margin-bottom: var(--space-sm);
-  height: calc(var(--grid-unit) * 40);
-  margin-left: var(--space-sm);
-  margin-right: var(--space-sm);
+  height: var(--image-height);
+  width: var(--image-width);
+  margin-left: var(--space-md);
+  margin-right: var(--space-md);
   object-fit:cover ;
 }
 
@@ -169,6 +170,7 @@ height: var(--logo-size);
 
 .card__actions {
   gap: var(--space-xs);
+  margin-bottom: var(--grid-unit);
 }
 
 .card__content{
