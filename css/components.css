@@ -649,7 +649,7 @@
     margin-top: var(--space-md);
 }
 
-/* ===== DISCLAIMER ===== */
+/* disclaimer*/
 .disclaimer {
     background-color: var(--color-accent);
     color: var(--color-primary);
@@ -686,7 +686,7 @@
     }
 }
 
-/* ===== SECTION STYLES ===== */
+/**/
 section {
     padding-block: var(--space-xl);
 }
@@ -705,7 +705,7 @@ section {
     margin-bottom: var(--space-xl);
 }
 
-/* ===== RESPONSIVE ADJUSTMENTS ===== */
+/* responsivita */
 @media (max-width: 768px) {
     .header {
         flex-direction: row;
