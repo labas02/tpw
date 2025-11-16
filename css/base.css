@@ -1,69 +1,86 @@
-/* ===================================
-   CoffeeHub Base.css
-   Grid, colors, typography, containers
-   =================================== */
-
 :root {
-  --grid-unit: 4px;
+    /* Design Tokens - Grid Unit */
+    --grid-unit: 4px;
 
-  --color-primary: rgba(49, 36, 17, 1);       /* Deep espresso */
-  --color-secondary: rgba(81, 60, 24, 1);     /* Medium roast */
-  --color-accent: rgba(132, 114, 82, 1);      /* Caramel accent */
-  --color-bg: rgba(227, 218, 201, 1);         /* Cream background */
-  --color-white: rgba(254, 254, 254, 1);      /* Neutral white */
-  --color-text: rgba(49, 36, 17, 0.9);        /* Primary text */
-  --color-muted: rgba(132, 114, 82, 0.6);     /* Muted text */
+    /* Design Tokens - Colors */
+    --color-primary: #6F4E37; /* Coffee Brown */
+    --color-secondary: #A0522D; /* Sienna/Terracotta */
+    --color-accent: #FFD700; /* Gold/Yellow for highlights */
+    --color-text: #333333;
+    --color-muted: #666666;
+    --color-white: #FFFFFF;
+    --color-bg: #F5F5DC; /* Beige/Cream background */
+    --color-error: #CC0000;
+    --color-success: #008000;
 
-  --text-xs: calc(var(--grid-unit) * 3.5);  /* 14px */
-  --text-sm: calc(var(--grid-unit) * 4);    /* 16px */
-  --text-md: calc(var(--grid-unit) * 5);    /* 20px */
-  --text-lg: calc(var(--grid-unit) * 6);    /* 24px */
-  --text-xl: calc(var(--grid-unit) * 8);    /* 32px */
-  --text-xxl: calc(var(--grid-unit) * 12);  /* 48px */
+    /* Design Tokens - Spacing Scale (based on 4px grid) */
+    --space-xxs: calc(var(--grid-unit) * 1); /* 4px */
+    --space-xs: calc(var(--grid-unit) * 2); /* 8px */
+    --space-sm: calc(var(--grid-unit) * 4); /* 16px */
+    --space-md: calc(var(--grid-unit) * 6); /* 24px */
+    --space-lg: calc(var(--grid-unit) * 8); /* 32px */
+    --space-xl: calc(var(--grid-unit) * 12); /* 48px */
+    --space-xxl: calc(var(--grid-unit) * 16); /* 64px */
+    --space-massive: calc(var(--grid-unit) * 24); /* 96px */
 
-  --space-xs: calc(var(--grid-unit) * 2);   /* 8px */
-  --space-sm: calc(var(--grid-unit) * 4);   /* 16px */
-  --space-md: calc(var(--grid-unit) * 8);   /* 32px */
-  --space-lg: calc(var(--grid-unit) * 12);  /* 48px */
-  --space-xl: calc(var(--grid-unit) * 20);  /* 80px */
-  --space-massive:  calc(var(--grid-unit)*40);
+    /* Design Tokens - Typography Scale (Modular Scale) */
+    --text-xs: 0.75rem; /* 12px */
+    --text-sm: 0.875rem; /* 14px */
+    --text-base: 1rem; /* 16px */
+    --text-md: 1.25rem; /* 20px */
+    --text-lg: 1.5rem; /* 24px */
+    --text-xl: 2rem; /* 32px */
+    --text-xxl: 3rem; /* 48px */
+    --text-massive: 4rem; /* 64px */
 
-  --full-width:100%;
-
-  --container-width: calc(var(--grid-unit) * 280); /* 1120px */
-  --card-height:25rem;
-  --card-width:18rem;
-  --logo-size: 7rem;
-
-  --image-height:90%;
-  --image-width:92%;
+    /* Design Tokens - Component Dimensions */
+    --logo-size: 48px;
+    --card-width: 300px;
+    --card-height: 450px;
+    --image-width: 100%;
+    --image-height: 200px;
 }
 
-body {
-  background-color: var(--color-bg);
-  color: var(--color-text);
-  font-family: "Inter", sans-serif;
-  font-size: var(--text-sm);
-  line-height: 1.6;
-  -webkit-font-smoothing: antialiased;
-}
-
+/* Base styles for semantic elements */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Playfair Display", serif;
-  color: var(--color-primary);
-  line-height: 1.2;
+    font-family: "Playfair Display", serif;
+    line-height: 1.2;
+    margin-bottom: var(--space-sm);
+    color: var(--color-primary);
 }
 
-h1 { font-size: var(--text-xxl); margin-bottom: var(--space-sm); }
-h2 { font-size: var(--text-xl); margin-bottom: var(--space-sm); }
-h3 { font-size: var(--text-lg); margin-bottom: var(--space-xs); }
+h1 { font-size: var(--text-massive); }
+h2 { font-size: var(--text-xxl); }
+h3 { font-size: var(--text-xl); }
+h4 { font-size: var(--text-lg); }
 
-p { margin-bottom: var(--space-sm); }
+p {
+    margin-bottom: var(--space-sm);
+}
 
 .container {
-  /*max-width: var(--container-width);*/
-  min-height: fit-content;
-  margin-inline: auto;
-  padding-inline: var(--space-sm);
-  text-align: center;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: var(--space-sm);
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: var(--space-md);
+}
+
+.section-description {
+    text-align: center;
+    font-size: var(--text-md);
+    color: var(--color-muted);
+    margin-bottom: var(--space-xl);
+}
+
+/* Responsive adjustments for base typography */
+@media (max-width: 768px) {
+    h1 { font-size: var(--text-xxl); }
+    h2 { font-size: var(--text-xl); }
+    h3 { font-size: var(--text-lg); }
+    h4 { font-size: var(--text-md); }
+    .section-description { font-size: var(--text-base); }
 }

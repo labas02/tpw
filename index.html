@@ -20,12 +20,23 @@
 
 <body>
     <!-- Header -->
-    <header class="header header--dark container">
-        <img class="logo" src="files/logo.png" alt="">
+    <header class="header container">
+        <a href="index.html" class="logo-link">
+            <img class="logo" src="files/logo.png" alt="CoffeeHub Logo">
+        </a>
+        
+        <!-- Hamburger Menu Toggle -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" hidden>
+        <label for="menu-toggle" class="menu-icon">
+            <span class="menu-icon__line"></span>
+            <span class="menu-icon__line"></span>
+            <span class="menu-icon__line"></span>
+        </label>
+        
         <!-- Navigation -->
         <nav class="nav">
             <ul class="nav__list">
-                <li class="nav__item"><a href="#domu" class="nav__link">Domů</a></li>
+                <li class="nav__item"><a href="index.html" class="nav__link nav__link--active">Domů</a></li>
                 <li class="nav__item"><a href="products.html" class="nav__link">Produkty</a></li>
                 <li class="nav__item"><a href="#o-nas" class="nav__link">O nás</a></li>
                 <li class="nav__item"><a href="#kontakt" class="nav__link">Kontakt</a></li>
@@ -50,7 +61,6 @@
             </div>
         </section>
 
-    
         <!-- About Section -->
         <section class="about container" id="o-nas">
             <div class="about__content">
@@ -128,8 +138,8 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer footer--dark container">
-        <div class="footer__content">
+    <footer class="footer container">
+        <div class="footer__content footer__content--grid">
             <div class="footer__section">
                 <h3 class="footer__title">CoffeeHub</h3>
                 <p class="footer__description">
@@ -147,8 +157,8 @@
             <div class="footer__section">
                 <h4 class="footer__subtitle">Rychlé odkazy</h4>
                 <ul class="footer__links">
-                    <li><a href="#domu" class="footer__link">Domů</a></li>
-                    <li><a href="#produkty" class="footer__link">Produkty</a></li>
+                    <li><a href="index.html" class="footer__link">Domů</a></li>
+                    <li><a href="products.html" class="footer__link">Produkty</a></li>
                     <li><a href="#o-nas" class="footer__link">O nás</a></li>
                     <li><a href="#kontakt" class="footer__link">Kontakt</a></li>
                 </ul>
@@ -156,10 +166,9 @@
         </div>
 
         <!-- Disclaimer -->
-        <div class="disclaimer">
+        <div class="disclaimer disclaimer--prominent">
             <p class="disclaimer__text">
-                Tento web byl vytvořen jako studentský projekt. Veškeré uvedené informace a produkty jsou smyšlené a
-                nepředstavují skutečnou obchodní nabídku.
+                <strong>Upozornění:</strong> Tento web byl vytvořen jako studentský projekt v rámci předmětu Tvorba Webových Aplikací. Veškeré uvedené informace, produkty a služby jsou smyšlené a nepředstavují skutečnou obchodní nabídku. Obsah je určen pouze pro vzdělávací účely.
             </p>
             <p class="footer__copyright">
                 &copy; 2024 CoffeeHub | Poslední aktualizace: 12/2024
