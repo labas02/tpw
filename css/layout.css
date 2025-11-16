@@ -218,7 +218,7 @@
 }
 
 .about__content {
-    display: grid;
+    display: flex;
     grid-template-columns: 1fr 1fr;
     gap: var(--space-xl);
     align-items: center;

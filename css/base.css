@@ -43,7 +43,7 @@
 
 /* Base styles for semantic elements */
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Playfair Display", serif;
+    font-family: helvetica, serif;
     line-height: 1.2;
     margin-bottom: var(--space-sm);
     color: var(--color-primary);
@@ -59,7 +59,7 @@ p {
 }
 
 .container {
-    max-width: 1200px;
+   /* max-width: 1200px;*/
     margin-inline: auto;
     padding-inline: var(--space-sm);
 }
