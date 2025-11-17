@@ -22,12 +22,12 @@
 .button--primary {
     background-color: var(--color-primary);
     color: var(--color-white);
-    box-shadow: 0 2px 8px rgba(111, 78, 55, 0.2);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .button--primary:hover {
     background-color: var(--color-secondary);
-    box-shadow: 0 4px 12px rgba(111, 78, 55, 0.3);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     transform: translateY(-2px);
 }
 
@@ -200,9 +200,9 @@
 }
 
 .feature:hover {
-    background-color: #FFFACD;
+    background-color: var(--color-bg-hover);
     transform: translateY(-4px);
-    box-shadow: 0 4px 12px rgba(111, 78, 55, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .feature__title {
@@ -244,7 +244,7 @@
 .form__input,
 .form__textarea {
     padding: var(--space-sm);
-    border: 2px solid #ddd;
+    border: 2px solid var(--color-border);
     border-radius: calc(var(--grid-unit) * 1);
     font-size: var(--text-base);
     font-family: inherit;
@@ -255,7 +255,7 @@
 .form__textarea:focus {
     outline: none;
     border-color: var(--color-primary);
-    box-shadow: 0 0 0 3px rgba(111, 78, 55, 0.1);
+    box-shadow: 0 0 0 3px var(--color-primary-shadow);
 }
 
 .form__textarea {

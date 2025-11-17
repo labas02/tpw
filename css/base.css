@@ -13,6 +13,19 @@
     --color-error: #CC0000;
     --color-success: #008000;
 
+
+    /* New Theming Variables (Light Mode Defaults) */
+    --color-primary-hover: #A0522D; /* Sienna */
+    --color-border: #ddd; /* Light gray border */
+    --color-primary-shadow: rgba(111, 78, 55, 0.1); /* Shadow based on primary color */
+    --color-bg-hover: #FFFACD; /* Light yellow hover for features */
+    --color-surface: var(--color-white); /* White surface for cards/info boxes */
+    --color-bg-secondary: var(--color-bg); /* Secondary background for sections */
+    --color-primary-bg: var(--color-primary); /* Primary color for footer background */
+    --color-text-on-primary: var(--color-white); /* White text on primary background */
+    --color-shadow: rgba(0, 0, 0, 0.05); /* Light shadow for contact/info boxes */
+    --color-accent-shadow: rgba(255, 215, 0, 0.1); /* Light accent shadow for hero */
+
     /* Design Tokens - Spacing Scale (based on 4px grid) */
     --space-xxs: calc(var(--grid-unit) * 1); /* 4px */
     --space-xs: calc(var(--grid-unit) * 2); /* 8px */

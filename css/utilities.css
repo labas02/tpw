@@ -125,15 +125,15 @@
 .bg-success { background-color: var(--color-success); }
 
 /* ===== BORDER UTILITIES ===== */
-.border { border: 1px solid #ddd; }
+.border { border: 1px solid var(--color-border); }
 .border-primary { border: 2px solid var(--color-primary); }
 .border-secondary { border: 2px solid var(--color-secondary); }
 .border-accent { border: 2px solid var(--color-accent); }
 
-.border-t { border-top: 1px solid #ddd; }
-.border-b { border-bottom: 1px solid #ddd; }
-.border-l { border-left: 1px solid #ddd; }
-.border-r { border-right: 1px solid #ddd; }
+.border-t { border-top: 1px solid var(--color-border); }
+.border-b { border-bottom: 1px solid var(--color-border); }
+.border-l { border-left: 1px solid var(--color-border); }
+.border-r { border-right: 1px solid var(--color-border); }
 
 /* ===== DISPLAY UTILITIES ===== */
 .display-none { display: none; }
