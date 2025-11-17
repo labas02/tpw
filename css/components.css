@@ -281,12 +281,15 @@
     font-size: var(--text-sm);
     line-height: 1.6;
     opacity: 0.9;
+    color: var(--color-text);
+
 }
 
 .footer__contact {
     font-size: var(--text-sm);
     margin-bottom: var(--space-xs);
     opacity: 0.9;
+    color: var(--color-text);
 }
 
 .footer__links {

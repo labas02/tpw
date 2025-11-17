@@ -25,6 +25,7 @@
     --color-text-on-primary: var(--color-white); /* White text on primary background */
     --color-shadow: rgba(0, 0, 0, 0.05); /* Light shadow for contact/info boxes */
     --color-accent-shadow: rgba(255, 215, 0, 0.1); /* Light accent shadow for hero */
+    --color-footer-text: rgba(0, 0, 0, 0);
 
     /* Design Tokens - Spacing Scale (based on 4px grid) */
     --space-xxs: calc(var(--grid-unit) * 1); /* 4px */
