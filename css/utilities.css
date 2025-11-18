@@ -173,6 +173,9 @@
 .overflow-x-auto { overflow-x: auto; }
 .overflow-y-auto { overflow-y: auto; }
 
+/*===== IMAGE UTILITIES ===== */
+.image-cover{object-fit: cover};
+
 /* ===== CURSOR UTILITIES ===== */
 .cursor-pointer { cursor: pointer; }
 .cursor-default { cursor: default; }

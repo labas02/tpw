@@ -1,0 +1,13 @@
+
+
+/* ===== FLEXBOX UTILITIES ===== */
+ .flex-center { display: flex; justify-content: center; align-items: center; }
+.flex-column { display: flex; flex-direction: column; }
+.flex-wrap { display: flex; flex-wrap: wrap; }
+
+/* ===== WIDTH & HEIGHT UTILITIES ===== */
+.w-full { width: 100%; }
+
+
+/*===== IMAGE UTILITIES ===== */
+.image-cover{object-fit: cover};
