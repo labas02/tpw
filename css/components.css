@@ -174,15 +174,7 @@
     flex-wrap: wrap;
 }
 
-/* Card Modifier - Featured */
-.card--featured {
-    border: 2px solid var(--color-accent);
-    transform: scale(1.05);
-}
 
-.card--featured:hover {
-    transform: scale(1.05) translateY(-4px);
-}
 
 /* ===== FEATURE COMPONENT ===== */
 .about__features {
@@ -312,15 +304,6 @@
 }
 
 /* ===== DISCLAIMER COMPONENT ===== */
-.disclaimer {
-    background-color: var(--color-accent);
-    color: var(--color-primary);
-    padding: var(--space-lg);
-    border-radius: calc(var(--grid-unit) * 2);
-    margin-top: var(--space-lg);
-    border-left: 4px solid var(--color-primary);
-}
-
 .disclaimer--prominent {
     background-color: var(--color-accent);
     color: var(--color-primary);
@@ -359,9 +342,7 @@
     line-height: 1.8;
 }
 
-.image-placeholder {
-    text-align: center;
-}
+
 
 .team-member{
     padding: var(--space-md);
@@ -372,10 +353,5 @@
     margin: var(--space-lg);
 }
 
-.team-member__bio{
-    display: inline-block;
-}
 
-#nas-tym{
-    margin-top: calc(var(--grid-unit)*15);
-}
+
