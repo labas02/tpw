@@ -3,35 +3,22 @@
    Utility classes
    =================================== */
 
-/* ===== FLEXBOX UTILITIES ===== */
 .flex-center { display: flex; justify-content: center; align-items: center; }
 .flex-column { display: flex; flex-direction: column; }
 .flex-wrap { display: flex; flex-wrap: wrap; }
 
 
-
-/* ===== WIDTH & HEIGHT UTILITIES ===== */
 .w-full { width: 100%; }
 
-/*===== IMAGE UTILITIES ===== */
 .image-cover{object-fit: cover};
 
-/* ===== RESPONSIVE UTILITIES ===== */
-
-/* Mobile-first: Base styles for small screens (under 480px) */
-.grid-2 { grid-template-columns: 1fr; }
-.grid-3 { grid-template-columns: 1fr; }
-.grid-4 { grid-template-columns: 1fr; }
 
 .hide-small { display: none; }
 
 .pd-sm { padding: var(--space-xs); }
 .mg-sm { margin: var(--space-xs); }
 
-/* Progressive enhancement for small mobile devices (481px and up) */
 @media (min-width: 481px) {
-    .grid-3 { grid-template-columns: repeat(2, 1fr); }
-    .grid-4 { grid-template-columns: repeat(2, 1fr); }
 
     .hide-small { display: block; }
 
@@ -39,11 +26,7 @@
     .mg-sm { margin: var(--space-sm); }
 }
 
-/* Progressive enhancement for tablets and larger (769px and up) */
 @media (min-width: 769px) {
-    .grid-2 { grid-template-columns: repeat(2, 1fr); }
-    .grid-3 { grid-template-columns: repeat(3, 1fr); }
-    .grid-4 { grid-template-columns: repeat(4, 1fr); }
 
     .flex-column-mobile { flex-direction: row; }
 
@@ -56,7 +39,6 @@
 }
 
 
-/* ===== BORDER-RADIUS UTILITIES ===== */
 .rounded-xs { border-radius: var(--space-xxs); }
 .rounded-sm { border-radius: var(--space-xs); }
 .rounded-md { border-radius: var(--space-sm); }
