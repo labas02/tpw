@@ -40,7 +40,7 @@
 }
 
 .nav__list {
-   
+    
     gap: var(--space-sm);
     list-style: none;
     
