@@ -21,20 +21,20 @@
 </head>
 
 <body>
-    <header class="header container">
+    <header class="header flex container">
         <a href="index.html" class="logo-link">
             <img class="logo" src="files/logo.png" alt="CoffeeHub Logo">
         </a>
-        
+
         <input type="checkbox" id="menu-toggle" class="menu-toggle" hidden>
         <label for="menu-toggle" class="menu-icon">
             <span class="menu-icon__line"></span>
             <span class="menu-icon__line"></span>
             <span class="menu-icon__line"></span>
         </label>
-        
+
         <nav class="nav">
-            <ul class="nav__list">
+            <ul class="nav__list flex-center">
                 <li class="nav__item"><a href="index.html" class="nav__link">Domů</a></li>
                 <li class="nav__item"><a href="products.html" class="nav__link nav__link--active">Produkty</a></li>
                 <li class="nav__item"><a href="index.html#o-nas" class="nav__link">O nás</a></li>
@@ -55,28 +55,30 @@
                 <div class="card">
                     <input type="checkbox" id="flip-ethiopia" class="card__toggle" hidden>
 
-                    <div class="card__front card__content">
-                        <h3 class="card__title">Ethiopia Yirgacheffe</h3>
-                        <img class="card__image" src="files/ethiopia_yirgacheffe.png" alt="Image of Ethiopia Yirgacheffe coffee beans">
-                        <span class="card__subtitle">Yirgacheffe</span>
-                        <p class="card__description">
+                    <div class="card__front card__content flex-center flex-column">
+                        <h3 class="card__title m-b-xs">Ethiopia Yirgacheffe</h3>
+                        <img class="card__image rounded-sx m-b-md" src="files/ethiopia_yirgacheffe.png"
+                            alt="Image of Ethiopia Yirgacheffe coffee beans">
+                        <span class="card__subtitle m-b-sm">Yirgacheffe</span>
+                        <p class="card__description m-b-sm">
                             Známá pro svou jasnou kyselost a květinové tóny s jemným sametovým tělem.
                         </p>
-                        <div class="card__price">349 Kč</div>
-                        <div class="card__actions">
-                            <button class="button button--primary button--small">Koupit</button>
+                        <div class="card__price m-b-md">349 Kč</div>
+                        <div class="card__actions flex-wrap flex-center">
+                            <button type="button" class="button button--primary button--small">Koupit</button>
                             <label for="flip-ethiopia" class="button button--secondary button--small">Více info</label>
                         </div>
                     </div>
 
-                    <div class="card__back card__content">
-                        <h3 class="card__title">Ethiopia Yirgacheffe</h3>
-                        <img class="card__image" src="files/ethiopia_yirgacheffe.png" alt="Image of Ethiopia Yirgacheffe coffee beans">
-                        <span class="card__subtitle">Yirgacheffe</span>
-                        <p class="card__description">
+                    <div class="card__back card__content flex-center flex-column ">
+                        <h3 class="card__title m-b-xs">Ethiopia Yirgacheffe</h3>
+                        <img class="card__image rounded-sx m-b-md" src="files/ethiopia_yirgacheffe.png"
+                            alt="Image of Ethiopia Yirgacheffe coffee beans">
+                        <span class="card__subtitle m-b-sm">Yirgacheffe</span>
+                        <p class="card__description m-b-sm">
                             Pěstována v nadmořské výšce 1 700–2 200 metrů. Jemná a ovocná vůně s nádechem jasmínu.
                         </p>
-                        <div class="card__actions">
+                        <div class="card__actions flex-wrap flex-center">
                             <label for="flip-ethiopia" class="button button--secondary button--small">Zpět</label>
                         </div>
                     </div>
@@ -86,28 +88,31 @@
                 <div class="card">
                     <input type="checkbox" id="flip-brazil" class="card__toggle" hidden>
 
-                    <div class="card__front card__content">
-                        <h3 class="card__title">Brazil Santos</h3>
-                        <img class="card__image" src="files/brazil_santos.jpg" alt="Image of Brazil Santos coffee beans">
-                        <span class="card__subtitle">Brazil Santos</span>
-                        <p class="card__description">
+                    <div class="card__front card__content flex-center flex-column">
+                        <h3 class="card__title m-b-xs">Brazil Santos</h3>
+                        <img class="card__image rounded-sx m-b-md" src="files/brazil_santos.jpg"
+                            alt="Image of Brazil Santos coffee beans">
+                        <span class="card__subtitle m-b-sm">Brazil Santos</span>
+                        <p class="card__description m-b-sm">
                             Jemná káva s oříškovými a čokoládovými tóny, nízkou kyselostí. Ideální pro každodenní pití.
                         </p>
-                        <div class="card__price">229 Kč</div>
-                        <div class="card__actions">
-                            <button class="button button--primary button--small">Koupit</button>
+                        <div class="card__price m-b-md">229 Kč</div>
+                        <div class="card__actions flex-wrap flex-center">
+                            <button type="button" class="button button--primary button--small">Koupit</button>
                             <label for="flip-brazil" class="button button--secondary button--small">Více info</label>
                         </div>
                     </div>
 
-                    <div class="card__back card__content">
-                        <h3 class="card__title">Brazil Santos</h3>
-                        <img class="card__image" src="files/brazil_santos.jpg" alt="Image of Brazil Santos coffee beans">
-                        <span class="card__subtitle">Brazil Santos</span>
-                        <p class="card__description">
-                            Pěstována v nízkých nadmořských výškách. Nabízí jemný profil s chutí čokolády, karamelu a oříšků.
+                    <div class="card__back card__content flex-center flex-column">
+                        <h3 class="card__title m-b-xs">Brazil Santos</h3>
+                        <img class="card__image rounded-sx m-b-md" src="files/brazil_santos.jpg"
+                            alt="Image of Brazil Santos coffee beans">
+                        <span class="card__subtitle m-b-sm">Brazil Santos</span>
+                        <p class="card__description m-b-sm">
+                            Pěstována v nízkých nadmořských výškách. Nabízí jemný profil s chutí čokolády, karamelu a
+                            oříšků.
                         </p>
-                        <div class="card__actions">
+                        <div class="card__actions flex-wrap flex-center">
                             <label for="flip-brazil" class="button button--secondary button--small">Zpět</label>
                         </div>
                     </div>
@@ -117,28 +122,30 @@
                 <div class="card">
                     <input type="checkbox" id="flip-guatemala" class="card__toggle" hidden>
 
-                    <div class="card__front card__content">
-                        <h3 class="card__title">Guatemala Antigua</h3>
-                        <img class="card__image" src="files/guatemala_antigua.jpg" alt="Image of Guatemala Antigua coffee beans">
-                        <span class="card__subtitle">Guatemala Antigua</span>
-                        <p class="card__description">
+                    <div class="card__front card__content flex-center flex-column">
+                        <h3 class="card__title m-b-xs">Guatemala Antigua</h3>
+                        <img class="card__image rounded-sx m-b-md" src="files/guatemala_antigua.jpg"
+                            alt="Image of Guatemala Antigua coffee beans">
+                        <span class="card__subtitle m-b-sm">Guatemala Antigua</span>
+                        <p class="card__description m-b-sm">
                             Plná chuť s vyváženou ovocnou svěžestí a sladkými čokoládovými podtóny.
                         </p>
-                        <div class="card__price">299 Kč</div>
-                        <div class="card__actions">
-                            <button class="button button--primary button--small">Koupit</button>
+                        <div class="card__price m-b-md">299 Kč</div>
+                        <div class="card__actions flex-wrap flex-center">
+                            <button type="button" class="button button--primary button--small">Koupit</button>
                             <label for="flip-guatemala" class="button button--secondary button--small">Více info</label>
                         </div>
                     </div>
 
-                    <div class="card__back card__content">
-                        <h3 class="card__title">Guatemala Antigua</h3>
-                        <img class="card__image" src="files/guatemala_antigua.jpg" alt="Image of Guatemala Antigua coffee beans">
-                        <span class="card__subtitle">Guatemala Antigua</span>
-                        <p class="card__description">
+                    <div class="card__back card__content flex-center flex-column">
+                        <h3 class="card__title m-b-xs">Guatemala Antigua</h3>
+                        <img class="card__image rounded-sx m-b-md" src="files/guatemala_antigua.jpg"
+                            alt="Image of Guatemala Antigua coffee beans">
+                        <span class="card__subtitle m-b-sm">Guatemala Antigua</span>
+                        <p class="card__description m-b-sm">
                             Pěstována v sopečné půdě regionu Antigua. Komplexní profil s tóny koření a citrusů.
                         </p>
-                        <div class="card__actions">
+                        <div class="card__actions flex-wrap flex-center">
                             <label for="flip-guatemala" class="button button--secondary button--small">Zpět</label>
                         </div>
                     </div>
@@ -148,28 +155,30 @@
                 <div class="card">
                     <input type="checkbox" id="flip-sumatra" class="card__toggle" hidden>
 
-                    <div class="card__front card__content">
-                        <h3 class="card__title">Sumatra Mandheling</h3>
-                        <img class="card__image" src="files/sumatra_mandheling.jpg" alt="Image of Sumatra Mandheling coffee beans">
-                        <span class="card__subtitle">Sumatra Mandheling</span>
-                        <p class="card__description">
+                    <div class="card__front card__content flex-center flex-column">
+                        <h3 class="card__title m-b-xs">Sumatra Mandheling</h3>
+                        <img class="card__image rounded-sx m-b-md" src="files/sumatra_mandheling.jpg"
+                            alt="Image of Sumatra Mandheling coffee beans">
+                        <span class="card__subtitle m-b-sm">Sumatra Mandheling</span>
+                        <p class="card__description m-b-sm">
                             Zemitá a výrazná chuť s hustým tělem a nízkou kyselostí. Tóny tmavé čokolády a koření.
                         </p>
-                        <div class="card__price">319 Kč</div>
-                        <div class="card__actions">
-                            <button class="button button--primary button--small">Koupit</button>
+                        <div class="card__price m-b-md">319 Kč</div>
+                        <div class="card__actions flex-wrap flex-center">
+                            <button type="button" class="button button--primary button--small">Koupit</button>
                             <label for="flip-sumatra" class="button button--secondary button--small">Více info</label>
                         </div>
                     </div>
 
-                    <div class="card__back card__content">
-                        <h3 class="card__title">Sumatra Mandheling</h3>
-                        <img class="card__image" src="files/sumatra_mandheling.jpg" alt="Image of Sumatra Mandheling coffee beans">
-                        <span class="card__subtitle">Sumatra Mandheling</span>
-                        <p class="card__description">
+                    <div class="card__back card__content flex-center flex-column">
+                        <h3 class="card__title m-b-xs">Sumatra Mandheling</h3>
+                        <img class="card__image rounded-sx m-b-md" src="files/sumatra_mandheling.jpg"
+                            alt="Image of Sumatra Mandheling coffee beans">
+                        <span class="card__subtitle m-b-sm">Sumatra Mandheling</span>
+                        <p class="card__description m-b-sm">
                             Pěstována ve vysokých nadmořských výškách na Sumatře. Známá pro plné tělo a komplexní chuť.
                         </p>
-                        <div class="card__actions">
+                        <div class="card__actions flex-wrap flex-center">
                             <label for="flip-sumatra" class="button button--secondary button--small">Zpět</label>
                         </div>
                     </div>
@@ -188,29 +197,34 @@
                 <div class="card">
                     <input type="checkbox" id="flip-ethiopia-ground" class="card__toggle" hidden>
 
-                    <div class="card__front card__content">
-                        <h3 class="card__title">Ethiopia Yirgacheffe</h3>
-                        <img class="card__image" src="files/ethiopia_yirgacheffe.png" alt="Image of Ethiopia Yirgacheffe coffee beans">
-                        <span class="card__subtitle">Mletá - Yirgacheffe</span>
-                        <p class="card__description">
-                            Jemná mletá káva s květinovými tóny a svěží kyselostí. Vyvážené tělo pro lehce ovocný chuťový profil.
+                    <div class="card__front card__content flex-center flex-column">
+                        <h3 class="card__title m-b-xs">Ethiopia Yirgacheffe</h3>
+                        <img class="card__image rounded-sx m-b-md" src="files/ethiopia_yirgacheffe.png"
+                            alt="Image of Ethiopia Yirgacheffe coffee beans">
+                        <span class="card__subtitle m-b-sm">Mletá - Yirgacheffe</span>
+                        <p class="card__description m-b-sm">
+                            Jemná mletá káva s květinovými tóny a svěží kyselostí. Vyvážené tělo pro lehce ovocný
+                            chuťový profil.
                         </p>
-                        <div class="card__price">349 Kč</div>
-                        <div class="card__actions">
-                            <button class="button button--primary button--small">Koupit</button>
-                            <label for="flip-ethiopia-ground" class="button button--secondary button--small">Více info</label>
+                        <div class="card__price m-b-md">349 Kč</div>
+                        <div class="card__actions flex-wrap flex-center">
+                            <button type="button" class="button button--primary button--small">Koupit</button>
+                            <label for="flip-ethiopia-ground" class="button button--secondary button--small">Více
+                                info</label>
                         </div>
                     </div>
 
-                    <div class="card__back card__content">
-                        <h3 class="card__title">Ethiopia Yirgacheffe</h3>
-                        <img class="card__image" src="files/ethiopia_yirgacheffe.png" alt="Image of Ethiopia Yirgacheffe coffee beans">
-                        <span class="card__subtitle">Mletá - Yirgacheffe</span>
-                        <p class="card__description">
+                    <div class="card__back card__content flex-center flex-column">
+                        <h3 class="card__title m-b-xs">Ethiopia Yirgacheffe</h3>
+                        <img class="card__image rounded-sx m-b-md" src="files/ethiopia_yirgacheffe.png"
+                            alt="Image of Ethiopia Yirgacheffe coffee beans">
+                        <span class="card__subtitle m-b-sm">Mletá - Yirgacheffe</span>
+                        <p class="card__description m-b-sm">
                             Jemně mletá pro filtrovanou kávu. Nabízí květinovou vůni s nádechem jasmínu a citrusů.
                         </p>
-                        <div class="card__actions">
-                            <label for="flip-ethiopia-ground" class="button button--secondary button--small">Zpět</label>
+                        <div class="card__actions flex-wrap flex-center">
+                            <label for="flip-ethiopia-ground"
+                                class="button button--secondary button--small">Zpět</label>
                         </div>
                     </div>
                 </div>
@@ -219,28 +233,31 @@
                 <div class="card">
                     <input type="checkbox" id="flip-brazil-ground" class="card__toggle" hidden>
 
-                    <div class="card__front card__content">
-                        <h3 class="card__title">Brazil Santos</h3>
-                        <img class="card__image" src="files/brazil_santos.jpg" alt="Image of Brazil Santos coffee beans">
-                        <span class="card__subtitle">Mletá - Brazil Santos</span>
-                        <p class="card__description">
+                    <div class="card__front card__content flex-center flex-column">
+                        <h3 class="card__title m-b-xs">Brazil Santos</h3>
+                        <img class="card__image rounded-sx m-b-md" src="files/brazil_santos.jpg"
+                            alt="Image of Brazil Santos coffee beans">
+                        <span class="card__subtitle m-b-sm">Mletá - Brazil Santos</span>
+                        <p class="card__description m-b-sm">
                             Mletá káva s jemnou chutí čokolády a oříšků. Vhodná pro přípravu espresso i moka kávy.
                         </p>
-                        <div class="card__price">229 Kč</div>
-                        <div class="card__actions">
-                            <button class="button button--primary button--small">Koupit</button>
-                            <label for="flip-brazil-ground" class="button button--secondary button--small">Více info</label>
+                        <div class="card__price m-b-md">229 Kč</div>
+                        <div class="card__actions flex-wrap flex-center">
+                            <button type="button" class="button button--primary button--small">Koupit</button>
+                            <label for="flip-brazil-ground" class="button button--secondary button--small">Více
+                                info</label>
                         </div>
                     </div>
 
-                    <div class="card__back card__content">
-                        <h3 class="card__title">Brazil Santos</h3>
-                        <img class="card__image" src="files/brazil_santos.jpg" alt="Image of Brazil Santos coffee beans">
-                        <span class="card__subtitle">Mletá - Brazil Santos</span>
-                        <p class="card__description">
+                    <div class="card__back card__content flex-center flex-column">
+                        <h3 class="card__title m-b-xs">Brazil Santos</h3>
+                        <img class="card__image rounded-sx m-b-md" src="files/brazil_santos.jpg"
+                            alt="Image of Brazil Santos coffee beans">
+                        <span class="card__subtitle m-b-sm">Mletá - Brazil Santos</span>
+                        <p class="card__description m-b-sm">
                             Jemně mletá káva s jemně sladkými tóny karamelu a výrazem čokolády. Univerzální využití.
                         </p>
-                        <div class="card__actions">
+                        <div class="card__actions flex-wrap flex-center">
                             <label for="flip-brazil-ground" class="button button--secondary button--small">Zpět</label>
                         </div>
                     </div>
@@ -250,29 +267,34 @@
                 <div class="card">
                     <input type="checkbox" id="flip-guatemala-ground" class="card__toggle" hidden>
 
-                    <div class="card__front card__content">
-                        <h3 class="card__title">Guatemala Antigua</h3>
-                        <img class="card__image" src="files/guatemala_antigua.jpg" alt="Image of Guatemala Antigua coffee beans">
-                        <span class="card__subtitle">Mletá - Guatemala Antigua</span>
-                        <p class="card__description">
+                    <div class="card__front card__content flex-center flex-column">
+                        <h3 class="card__title m-b-xs">Guatemala Antigua</h3>
+                        <img class="card__image rounded-sx m-b-md" src="files/guatemala_antigua.jpg"
+                            alt="Image of Guatemala Antigua coffee beans">
+                        <span class="card__subtitle m-b-sm">Mletá - Guatemala Antigua</span>
+                        <p class="card__description m-b-sm">
                             Mletá verze s plnou chutí a vyváženou ovocnou svěžestí. Ideální pro filtr a espresso.
                         </p>
-                        <div class="card__price">299 Kč</div>
-                        <div class="card__actions">
-                            <button class="button button--primary button--small">Koupit</button>
-                            <label for="flip-guatemala-ground" class="button button--secondary button--small">Více info</label>
+                        <div class="card__price m-b-md">299 Kč</div>
+                        <div class="card__actions flex-wrap flex-center">
+                            <button type="button" class="button button--primary button--small">Koupit</button>
+                            <label for="flip-guatemala-ground" class="button button--secondary button--small">Více
+                                info</label>
                         </div>
                     </div>
 
-                    <div class="card__back card__content">
-                        <h3 class="card__title">Guatemala Antigua</h3>
-                        <img class="card__image" src="files/guatemala_antigua.jpg" alt="Image of Guatemala Antigua coffee beans">
-                        <span class="card__subtitle">Mletá - Guatemala Antigua</span>
-                        <p class="card__description">
-                            Středně mletá s komplexním profilem. Tóny koření a citrusů se krásně projevují v každém šálku.
+                    <div class="card__back card__content flex-center flex-column">
+                        <h3 class="card__title m-b-xs">Guatemala Antigua</h3>
+                        <img class="card__image rounded-sx m-b-md" src="files/guatemala_antigua.jpg"
+                            alt="Image of Guatemala Antigua coffee beans">
+                        <span class="card__subtitle m-b-sm">Mletá - Guatemala Antigua</span>
+                        <p class="card__description m-b-sm">
+                            Středně mletá s komplexním profilem. Tóny koření a citrusů se krásně projevují v každém
+                            šálku.
                         </p>
-                        <div class="card__actions">
-                            <label for="flip-guatemala-ground" class="button button--secondary button--small">Zpět</label>
+                        <div class="card__actions flex-wrap flex-center">
+                            <label for="flip-guatemala-ground"
+                                class="button button--secondary button--small">Zpět</label>
                         </div>
                     </div>
                 </div>
@@ -281,28 +303,31 @@
                 <div class="card">
                     <input type="checkbox" id="flip-sumatra-ground" class="card__toggle" hidden>
 
-                    <div class="card__front card__content">
-                        <h3 class="card__title">Sumatra Mandheling</h3>
-                        <img class="card__image" src="files/sumatra_mandheling.jpg" alt="Image of Sumatra Mandheling coffee beans">
-                        <span class="card__subtitle">Mletá - Sumatra Mandheling</span>
-                        <p class="card__description">
+                    <div class="card__front card__content flex-center flex-column">
+                        <h3 class="card__title m-b-xs">Sumatra Mandheling</h3>
+                        <img class="card__image rounded-sx m-b-md" src="files/sumatra_mandheling.jpg"
+                            alt="Image of Sumatra Mandheling coffee beans">
+                        <span class="card__subtitle m-b-sm">Mletá - Sumatra Mandheling</span>
+                        <p class="card__description m-b-sm">
                             Hrubě mletá verze s výraznou chutí. Ideální pro přípravu silné espresso a moka.
                         </p>
-                        <div class="card__price">319 Kč</div>
-                        <div class="card__actions">
-                            <button class="button button--primary button--small">Koupit</button>
-                            <label for="flip-sumatra-ground" class="button button--secondary button--small">Více info</label>
+                        <div class="card__price m-b-md">319 Kč</div>
+                        <div class="card__actions flex-wrap flex-center">
+                            <button type="button" class="button button--primary button--small">Koupit</button>
+                            <label for="flip-sumatra-ground" class="button button--secondary button--small">Více
+                                info</label>
                         </div>
                     </div>
 
-                    <div class="card__back card__content">
-                        <h3 class="card__title">Sumatra Mandheling</h3>
-                        <img class="card__image" src="files/sumatra_mandheling.jpg" alt="Image of Sumatra Mandheling coffee beans">
-                        <span class="card__subtitle">Mletá - Sumatra Mandheling</span>
-                        <p class="card__description">
+                    <div class="card__back card__content flex-center flex-column">
+                        <h3 class="card__title m-b-xs">Sumatra Mandheling</h3>
+                        <img class="card__image rounded-sx m-b-md" src="files/sumatra_mandheling.jpg"
+                            alt="Image of Sumatra Mandheling coffee beans">
+                        <span class="card__subtitle m-b-sm">Mletá - Sumatra Mandheling</span>
+                        <p class="card__description m-b-sm">
                             Hrubě mletá pro silné nápoje. Zemitá a výrazná chuť s tóny tmavé čokolády a koření.
                         </p>
-                        <div class="card__actions">
+                        <div class="card__actions flex-wrap flex-center">
                             <label for="flip-sumatra-ground" class="button button--secondary button--small">Zpět</label>
                         </div>
                     </div>
@@ -314,7 +339,7 @@
     <footer class="footer container">
         <div class="footer__content footer__content--grid">
             <div class="footer__section">
-                <h3 class="footer__title">CoffeeHub</h3>
+                <h3 class="footer__title m-b-md">CoffeeHub</h3>
                 <p class="footer__description">
                     Váš průvodce světem kvalitní kávy od roku 2020.
                 </p>
@@ -322,14 +347,14 @@
 
             <div class="footer__section">
                 <h4 class="footer__subtitle">Kontakt</h4>
-                <p class="footer__contact">Email: info@coffeehub.cz</p>
-                <p class="footer__contact">Telefon: +420 123 456 789</p>
-                <p class="footer__contact">Adresa: Kávová 123, Praha</p>
+                <p class="footer__contact m-b-xs">Email: info@coffeehub.cz</p>
+                <p class="footer__contact m-b-xs">Telefon: +420 123 456 789</p>
+                <p class="footer__contact m-b-xs">Adresa: Kávová 123, Praha</p>
             </div>
 
             <div class="footer__section">
                 <h4 class="footer__subtitle">Rychlé odkazy</h4>
-                <ul class="footer__links">
+                <ul class="footer__links flex-column">
                     <li><a href="index.html" class="footer__link">Domů</a></li>
                     <li><a href="products.html" class="footer__link">Produkty</a></li>
                     <li><a href="index.html#o-nas" class="footer__link">O nás</a></li>
@@ -339,9 +364,11 @@
         </div>
 
         <!-- Disclaimer -->
-        <div class="disclaimer disclaimer--prominent">
-            <p class="disclaimer__text">
-                <strong>Upozornění:</strong> Tento web byl vytvořen jako studentský projekt v rámci předmětu Tvorba Webových Aplikací. Veškeré uvedené informace, produkty a služby jsou smyšlené a nepředstavují skutečnou obchodní nabídku. Obsah je určen pouze pro vzdělávací účely.
+        <div class="disclaimer disclaimer--prominent p-lg rounded-xs m-t-lg">
+            <p class="disclaimer__text m-b-sm">
+                <strong>Upozornění:</strong> Tento web byl vytvořen jako studentský projekt v rámci předmětu Tvorba
+                Webových Aplikací. Veškeré uvedené informace, produkty a služby jsou smyšlené a nepředstavují skutečnou
+                obchodní nabídku. Obsah je určen pouze pro vzdělávací účely.
             </p>
             <p class="footer__copyright">
                 &copy; 2025 CoffeeHub | Poslední aktualizace: 11/2025

@@ -45,10 +45,6 @@
     .grid-3 { grid-template-columns: repeat(3, 1fr); }
     .grid-4 { grid-template-columns: repeat(4, 1fr); }
 
-    .flex-column-mobile { flex-direction: row; }
-
-    .hide-mobile { display: block; }
-
     .text-md { font-size: var(--text-md); }
     .text-lg { font-size: var(--text-lg); }
     .text-xl { font-size: var(--text-xl); }

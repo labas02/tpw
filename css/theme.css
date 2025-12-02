@@ -1,66 +1,55 @@
 
-
 @media (prefers-color-scheme: dark) {
     :root {
-        /* Background and Surface Colors */
-        --color-bg: #121212; /* Dark background */
-        --color-surface: #1E1E1E; /* Slightly lighter dark surface for cards/headers */
-        --color-bg-secondary: #121212; /* Secondary background for sections */
-        --color-bg-hover: #282828; /* Dark hover for features */
-        --color-white: #333333; /* Darker white for elements that were pure white */
+      
+        --color-bg: #121212; 
+        --color-surface: #1E1E1E; 
+        --color-bg-secondary: #121212;
+        --color-bg-hover: #282828; 
+        --color-white: #333333;
         
-        /* Text Colors */
-        --color-text: #E0E0E0; /* Light text */
-        --color-muted: #B0B0B0; /* Medium light text */
-        --color-text-on-primary: #121212; /* Dark text on primary background */
+        
+        --color-text: #E0E0E0; 
+        --color-muted: #B0B0B0; 
+        --color-text-on-primary: #121212; 
 
-        /* Primary and Secondary Colors (Adjusted for dark background visibility) */
-        --color-primary: #D2B48C; /* Tan/Beige for contrast */
-        --color-primary-hover: #A0522D; /* Sienna */
-        --color-secondary: #A0522D; /* Sienna/Terracotta */
-        --color-accent: #FFD700; /* Gold/Yellow for highlights */
+        
+        --color-primary: #D2B48C; 
+        --color-primary-hover: #A0522D;
+        --color-secondary: #A0522D; 
+        --color-accent: #FFD700; 
 
-        /* Borders and Shadows */
-        --color-border: #333333; /* Darker gray border */
-        --color-primary-shadow: rgba(210, 180, 140, 0.1); /* Shadow based on primary color */
-        --color-shadow: rgba(255, 255, 255, 0.1); /* Light shadow for contact/info boxes */
-        --color-accent-shadow: rgba(255, 215, 0, 0.1); /* Light accent shadow for hero */
+        --color-border: #333333; 
+        --color-primary-shadow: rgba(210, 180, 140, 0.1); 
+        --color-shadow: rgba(255, 255, 255, 0.1); 
+        --color-accent-shadow: rgba(255, 215, 0, 0.1);
     }
 
-    /* General Body Overrides */
     body {
         background-color: var(--color-bg);
         color: var(--color-text);
     }
 
-    /* Specific component overrides using the new variables */
-
-    /* Header and Footer */
     .header, .footer {
         background-color: var(--color-surface);
     }
 
-    /* Navigation links */
     .nav__link, .footer__link {
         color: var(--color-text);
     }
 
-    /* Buttons (Primary) */
     .button--primary {
         color: var(--color-text-on-primary);
     }
 
-    /* Card styling */
     .card {
         box-shadow: 0 4px 12px var(--color-shadow);
     }
 
-    /* Feature hover */
     .feature:hover {
         box-shadow: 0 4px 12px var(--color-shadow);
     }
 
-    /* Input fields and forms */
     .form__input, .form__textarea {
         background-color: var(--color-bg);
         color: var(--color-text);
@@ -72,7 +61,6 @@
         box-shadow: 0 0 0 3px var(--color-primary-shadow);
     }
 
-    /* Disclaimer */
     .disclaimer {
         background-color: var(--color-accent);
         color: var(--color-bg);

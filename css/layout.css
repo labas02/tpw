@@ -1,11 +1,6 @@
-/* ===================================
-   CoffeeHub Layout.css
-   Layout and structural styles
-   =================================== */
 
-/* ===== HEADER ===== */
 .header {
-    display: flex;
+
     justify-content: space-between;
     align-items: center;
     padding-block: var(--space-sm);
@@ -31,7 +26,6 @@
     transform: scale(1.05);
 }
 
-/* ===== NAVIGATION ===== */
 .nav {
     flex: 1;
     position: absolute;
@@ -46,13 +40,10 @@
 }
 
 .nav__list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+   
     gap: var(--space-sm);
     list-style: none;
-    padding: var(--space-md);
+    
 }
 
 .nav__item {
@@ -79,7 +70,6 @@
     border-bottom-color: var(--color-accent);
 }
 
-/* Hamburger Menu (Mobile) */
 .menu-toggle {
     display: none;
 }
@@ -119,7 +109,6 @@
     padding-inline: var(--space-sm);
 }
 
-/* Progressive enhancement for larger screens (tablet and up) */
 @media (min-width: 769px) {
     .menu-icon {
         display: none;
@@ -146,7 +135,6 @@
 
 
 
-/* ===== HERO SECTION ===== */
 .hero {
     text-align: center;
     padding-block: var(--space-xl);
@@ -194,7 +182,6 @@
     flex-wrap: wrap;
 }
 
-/* Progressive enhancement for larger screens */
 @media (min-width: 769px) {
     .hero {
         padding-block: var(--space-xxl);
@@ -213,7 +200,6 @@
     }
 }
 
-/* ===== ABOUT SECTION ===== */
 .about {
     padding-block: var(--space-xxl);
 }
@@ -240,7 +226,6 @@
    
 }
 
-/* Progressive enhancement for larger screens */
 @media (min-width: 769px) {
     .about__content {
         grid-template-columns: 1fr 1fr;
@@ -263,7 +248,6 @@
     flex-direction: column;
 }
 
-/* Progressive enhancement for larger screens */
 @media (min-width: 769px) {
     #about__mise{
         flex-direction: row;
@@ -275,7 +259,6 @@
     flex-direction: row;
 }
 
-/* ===== CONTACT SECTION ===== */
 .contact {
     padding-block: var(--space-xxl);
     background-color: var(--color-bg-secondary);
@@ -301,14 +284,12 @@
     box-shadow: 0 2px 8px var(--color-shadow);
 }
 
-/* Progressive enhancement for larger screens */
 @media (min-width: 769px) {
     .contact__content {
         grid-template-columns: 1fr 1fr;
     }
 }
 
-/* ===== PRODUCTS SECTION ===== */
 .products-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -317,7 +298,6 @@
     justify-items: center;
 }
 
-/* Progressive enhancement for larger screens */
 @media (min-width: 769px) {
     .products-grid {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -325,7 +305,6 @@
     }
 }
 
-/* ===== FOOTER ===== */
 .footer {
     background-color: var(--color-primary-bg);
     color: var(--color-text-on-primary);
@@ -357,7 +336,6 @@
     margin-top: var(--space-md);
 }
 
-/* Progressive enhancement for larger screens */
 @media (min-width: 769px) {
     .footer__content {
         grid-template-columns: repeat(3, 1fr);
@@ -369,7 +347,6 @@
     }
 }
 
-/* ===== SECTION STYLES ===== */
 section {
     padding-block: var(--space-xl);
 }
@@ -388,7 +365,6 @@ section {
     margin-bottom: var(--space-xl);
 }
 
-/* Progressive enhancement for larger screens */
 @media (min-width: 769px) {
     .section-title {
         font-size: var(--text-xxl);

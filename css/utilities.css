@@ -1,12 +1,10 @@
-/* ===================================
-   CoffeeHub Utilities.css
-   Utility classes
-   =================================== */
+
 
 .flex-center { display: flex; justify-content: center; align-items: center; }
 .flex-column { display: flex; flex-direction: column; }
 .flex-wrap { display: flex; flex-wrap: wrap; }
-
+.flex-row{display: flex; flex-direction: row;}
+.flex{display: flex;}
 
 .w-full { width: 100%; }
 
@@ -28,17 +26,14 @@
 
 @media (min-width: 769px) {
 
-    .flex-column-mobile { flex-direction: row; }
-
-    .hide-mobile { display: block; }
 
 }
 
 
 .text-md { font-size: var(--text-md); }
-    .text-lg { font-size: var(--text-lg); }
-    .text-xl { font-size: var(--text-xl); }
-    .text-xxl { font-size: var(--text-xxl); }
+.text-lg { font-size: var(--text-lg); }
+.text-xl { font-size: var(--text-xl); }
+.text-xxl { font-size: var(--text-xxl); }
 
 .rounded-xs { border-radius: var(--space-xxs); }
 .rounded-sm { border-radius: var(--space-xs); }
@@ -47,9 +42,6 @@
 .rounded-xl { border-radius: var(--space-lg); }
 .rounded-full { border-radius: 9999px; }
 .rounded-none { border-radius: 0; }
-
-
-/* ===== SPACING UTILITIES (Padding and Margin) ===== */
 
 /* Padding */
 .p-xxs { padding: var(--space-xxs); }
@@ -68,53 +60,12 @@
 .m-lg { margin: var(--space-lg); }
 .m-xl { margin: var(--space-xl); }
 .m-xxl { margin: var(--space-xxl); }
+/* Margin bottom */
 
-/* Padding Top/Bottom */
-.py-xxs { padding-top: var(--space-xxs); padding-bottom: var(--space-xxs); }
-.py-xs { padding-top: var(--space-xs); padding-bottom: var(--space-xs); }
-.py-sm { padding-top: var(--space-sm); padding-bottom: var(--space-sm); }
-.py-md { padding-top: var(--space-md); padding-bottom: var(--space-md); }
-.py-lg { padding-top: var(--space-lg); padding-bottom: var(--space-lg); }
-.py-xl { padding-top: var(--space-xl); padding-bottom: var(--space-xl); }
-.py-xxl { padding-top: var(--space-xxl); padding-bottom: var(--space-xxl); }
+.m-b-xs{margin-bottom: var(--space-xs)}
+.m-b-sm{margin-bottom: var(--space-sm);}
+.m-b-md{margin-bottom: var(--space-md);}
 
-/* Padding Left/Right */
-.px-xxs { padding-left: var(--space-xxs); padding-right: var(--space-xxs); }
-.px-xs { padding-left: var(--space-xs); padding-right: var(--space-xs); }
-.px-sm { padding-left: var(--space-sm); padding-right: var(--space-sm); }
-.px-md { padding-left: var(--space-md); padding-right: var(--space-md); }
-.px-lg { padding-left: var(--space-lg); padding-right: var(--space-lg); }
-.px-xl { padding-left: var(--space-xl); padding-right: var(--space-xl); }
-.px-xxl { padding-left: var(--space-xxl); padding-right: var(--space-xxl); }
+/* Margin top*/
 
-/* Margin Top/Bottom */
-.my-xxs { margin-top: var(--space-xxs); margin-bottom: var(--space-xxs); }
-.my-xs { margin-top: var(--space-xs); margin-bottom: var(--space-xs); }
-.my-sm { margin-top: var(--space-sm); margin-bottom: var(--space-sm); }
-.my-md { margin-top: var(--space-md); margin-bottom: var(--space-md); }
-.my-lg { margin-top: var(--space-lg); margin-bottom: var(--space-lg); }
-.my-xl { margin-top: var(--space-xl); margin-bottom: var(--space-xl); }
-.my-xxl { margin-top: var(--space-xxl); margin-bottom: var(--space-xxl); }
-
-/* Margin Left/Right */
-.mx-auto { margin-left: auto; margin-right: auto; }
-.mx-xxs { margin-left: var(--space-xxs); margin-right: var(--space-xxs); }
-.mx-xs { margin-left: var(--space-xs); margin-right: var(--space-xs); }
-.mx-sm { margin-left: var(--space-sm); margin-right: var(--space-sm); }
-.mx-md { margin-left: var(--space-md); margin-right: var(--space-md); }
-.mx-lg { margin-left: var(--space-lg); margin-right: var(--space-lg); }
-.mx-xl { margin-left: var(--space-xl); margin-right: var(--space-xl); }
-.mx-xxl { margin-left: var(--space-xxl); margin-right: var(--space-xxl); }
-
-/* ===== COLOR UTILITIES (Text and Background) ===== */
-
-
-/* ===== DISPLAY UTILITIES ===== */
-.d-block { display: block; }
-.d-inline { display: inline; }
-.d-inline-block { display: inline-block; }
-
-/* ===== TEXT ALIGNMENT UTILITIES ===== */
-.text-left { text-align: left; }
-.text-center { text-align: center; }
-.text-right { text-align: right; }
+.m-t-lg{margin-top: var(--space-lg);}

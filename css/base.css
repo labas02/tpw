@@ -1,32 +1,30 @@
 :root {
 
-
-    /* Design Tokens - Colors */
-    --color-primary: #6F4E37; /* Coffee Brown */
-    --color-secondary: #A0522D; /* Sienna/Terracotta */
-    --color-accent: #FFD700; /* Gold/Yellow for highlights */
+    --color-primary: #6F4E37;
+    --color-secondary: #A0522D;
+    --color-accent: #FFD700;
     --color-text: #333333;
     --color-muted: #666666;
     --color-white: #FFFFFF;
-    --color-bg: #F5F5DC; /* Beige/Cream background */
+    --color-bg: #F5F5DC;
     --color-error: #CC0000;
     --color-success: #008000;
 
 
-    /* New Theming Variables (Light Mode Defaults) */
-    --color-primary-hover: #A0522D; /* Sienna */
-    --color-border: #ddd; /* Light gray border */
-    --color-primary-shadow: rgba(111, 78, 55, 0.1); /* Shadow based on primary color */
-    --color-bg-hover: #FFFACD; /* Light yellow hover for features */
-    --color-surface: var(--color-white); /* White surface for cards/info boxes */
-    --color-bg-secondary: var(--color-bg); /* Secondary background for sections */
-    --color-primary-bg: var(--color-primary); /* Primary color for footer background */
-    --color-text-on-primary: var(--color-white); /* White text on primary background */
-    --color-shadow: rgba(0, 0, 0, 0.05); /* Light shadow for contact/info boxes */
-    --color-accent-shadow: rgba(255, 215, 0, 0.1); /* Light accent shadow for hero */
+  
+    --color-primary-hover: #A0522D; 
+    --color-border: #ddd;
+    --color-primary-shadow: rgba(111, 78, 55, 0.1);
+    --color-bg-hover: #FFFACD;
+    --color-surface: var(--color-white); 
+    --color-bg-secondary: var(--color-bg);
+    --color-primary-bg: var(--color-primary); 
+    --color-text-on-primary: var(--color-white);
+    --color-shadow: rgba(0, 0, 0, 0.05); 
+    --color-accent-shadow: rgba(255, 215, 0, 0.1);
     --color-footer-text: rgba(0, 0, 0, 0);
 
-    /* Design Tokens - Spacing Scale (based on 4px grid) */
+    
     --space-xxs: 0.25rem; /* 4px */
     --space-xs: 0.5rem; /* 8px */
     --space-sm: 1rem; /* 16px */
@@ -36,7 +34,6 @@
     --space-xxl: 4rem; /* 64px */
     --space-massive: 6rem; /* 96px */
 
-    /* Design Tokens - Typography Scale (Modular Scale) */
     --text-xs: 0.75rem; /* 12px */
     --text-sm: 0.875rem; /* 14px */
     --text-base: 1rem; /* 16px */
@@ -46,7 +43,6 @@
     --text-xxl: 3rem; /* 48px */
     --text-massive: 4rem; /* 64px */
 
-    /* Design Tokens - Component Dimensions */
     --logo-size: 48px;
     --card-width: 300px;
     --card-height: 450px;
@@ -54,7 +50,7 @@
     --image-height: 167px;
 }
 
-/* Base styles for semantic elements */
+
 h1, h2, h3, h4, h5, h6 {
     font-family: helvetica, serif;
     line-height: 1.2;
@@ -62,7 +58,6 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--color-primary);
 }
 
-/* Mobile-first typography - base styles for mobile */
 h1 { font-size: var(--text-xxl); }
 h2 { font-size: var(--text-xl); }
 h3 { font-size: var(--text-lg); }
@@ -73,7 +68,6 @@ p {
 }
 
 .container {
-   /* max-width: 1200px;*/
     margin-inline: auto;
     padding-inline: var(--space-sm);
 }
@@ -90,7 +84,6 @@ p {
     margin-bottom: var(--space-xl);
 }
 
-/* Progressive enhancement for larger screens (tablet and up) */
 @media (min-width: 769px) {
     h1 { font-size: var(--text-massive); }
     h2 { font-size: var(--text-xxl); }
