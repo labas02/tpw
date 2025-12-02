@@ -32,12 +32,13 @@
 
     .hide-mobile { display: block; }
 
-    .text-md { font-size: var(--text-md); }
+}
+
+
+.text-md { font-size: var(--text-md); }
     .text-lg { font-size: var(--text-lg); }
     .text-xl { font-size: var(--text-xl); }
     .text-xxl { font-size: var(--text-xxl); }
-}
-
 
 .rounded-xs { border-radius: var(--space-xxs); }
 .rounded-sm { border-radius: var(--space-xs); }
@@ -112,9 +113,6 @@
 .d-block { display: block; }
 .d-inline { display: inline; }
 .d-inline-block { display: inline-block; }
-.d-flex { display: flex; }
-.d-grid { display: grid; }
-.d-none { display: none; }
 
 /* ===== TEXT ALIGNMENT UTILITIES ===== */
 .text-left { text-align: left; }
