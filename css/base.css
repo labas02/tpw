@@ -27,16 +27,27 @@
     --color-accent-shadow: rgba(255, 215, 0, 0.1); /* Light accent shadow for hero */
     --color-footer-text: rgba(0, 0, 0, 0);
 
+    /* Design Tokens - Spacing Scale (based on 4px grid) */
+    --space-xxs: calc(var(--grid-unit) * 1); /* 4px */
+    --space-xs: calc(var(--grid-unit) * 2); /* 8px */
+    --space-sm: calc(var(--grid-unit) * 4); /* 16px */
+    --space-md: calc(var(--grid-unit) * 6); /* 24px */
+    --space-lg: calc(var(--grid-unit) * 8); /* 32px */
+    --space-xl: calc(var(--grid-unit) * 12); /* 48px */
+    --space-xxl: calc(var(--grid-unit) * 16); /* 64px */
+    --space-massive: calc(var(--grid-unit) * 24); /* 96px */
 
-    --text-xs: 0.75rem;
-    --text-sm: 0.875rem; 
-    --text-base: 1rem; 
-    --text-md: 1.25rem; 
-    --text-lg: 1.5rem; 
-    --text-xl: 2rem; 
-    --text-xxl: 3rem; 
-    --text-massive: 4rem; 
+    /* Design Tokens - Typography Scale (Modular Scale) */
+    --text-xs: 0.75rem; /* 12px */
+    --text-sm: 0.875rem; /* 14px */
+    --text-base: 1rem; /* 16px */
+    --text-md: 1.25rem; /* 20px */
+    --text-lg: 1.5rem; /* 24px */
+    --text-xl: 2rem; /* 32px */
+    --text-xxl: 3rem; /* 48px */
+    --text-massive: 4rem; /* 64px */
 
+    /* Design Tokens - Component Dimensions */
     --logo-size: 48px;
     --card-width: 300px;
     --card-height: 450px;
