@@ -42,7 +42,7 @@
 .pd-b-md { padding-bottom: var(--space-md); }
 .pd-b-lg { padding-bottom: var(--space-lg); }
 
-/* ===== FLEXBOX UTILITIES ===== */
+
 .flex { display: flex; }
 .flex-center { display: flex; justify-content: center; align-items: center; }
 .flex-between { display: flex; justify-content: space-between; align-items: center; }
@@ -58,7 +58,7 @@
 .flex-grow { flex-grow: 1; }
 .flex-shrink { flex-shrink: 1; }
 
-/* ===== GRID UTILITIES ===== */
+
 .grid { display: grid; }
 .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); }
 .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); }
@@ -67,7 +67,6 @@
 .grid-gap-md { gap: var(--space-md); }
 .grid-gap-lg { gap: var(--space-lg); }
 
-/* ===== TEXT UTILITIES ===== */
 .text-center { text-align: center; }
 .text-left { text-align: left; }
 .text-right { text-align: right; }
@@ -102,20 +101,19 @@
 .line-height-normal { line-height: 1.5; }
 .line-height-relaxed { line-height: 1.8; }
 
-/* ===== BORDER RADIUS ===== */
+
 .rounded-none { border-radius: 0; }
 .rounded-sm { border-radius: calc(var(--grid-unit) * 1); }
 .rounded-md { border-radius: calc(var(--grid-unit) * 2); }
 .rounded-lg { border-radius: calc(var(--grid-unit) * 3); }
 .rounded-full { border-radius: 9999px; }
 
-/* ===== SHADOWS ===== */
 .shadow-none { box-shadow: none; }
 .shadow-sm { box-shadow: 0 calc(var(--grid-unit) * 1) calc(var(--grid-unit) * 2) rgba(0, 0, 0, 0.1); }
 .shadow-md { box-shadow: 0 calc(var(--grid-unit) * 2) calc(var(--grid-unit) * 4) rgba(0, 0, 0, 0.15); }
 .shadow-lg { box-shadow: 0 calc(var(--grid-unit) * 3) calc(var(--grid-unit) * 6) rgba(0, 0, 0, 0.2); }
 
-/* ===== BACKGROUND COLORS ===== */
+
 .bg-primary { background-color: var(--color-primary); }
 .bg-secondary { background-color: var(--color-secondary); }
 .bg-accent { background-color: var(--color-accent); }
@@ -124,7 +122,7 @@
 .bg-error { background-color: var(--color-error); }
 .bg-success { background-color: var(--color-success); }
 
-/* ===== BORDER UTILITIES ===== */
+
 .border { border: 1px solid var(--color-border); }
 .border-primary { border: 2px solid var(--color-primary); }
 .border-secondary { border: 2px solid var(--color-secondary); }

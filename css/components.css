@@ -85,8 +85,6 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     padding: var(--space-md);
@@ -121,8 +119,6 @@
 }
 
 .card__content {
-    display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -167,11 +163,9 @@
 }
 
 .card__actions {
-    display: flex;
     gap: var(--space-sm);
     width: 100%;
     justify-content: center;
-    flex-wrap: wrap;
 }
 
 /* Card Modifier - Featured */
