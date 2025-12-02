@@ -8,7 +8,7 @@
 
 .w-full { width: 100%; }
 
-.image-cover{object-fit: cover};
+.image-cover{object-fit: cover}
 
 
 .hide-small { display: none; }
@@ -25,7 +25,7 @@
 }
 
 @media (min-width: 769px) {
-
+    
 
 }
 

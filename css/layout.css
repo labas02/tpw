@@ -40,7 +40,8 @@
 }
 
 .nav__list {
-    
+    display: flex;
+    flex-direction: column;
     gap: var(--space-sm);
     list-style: none;
     
