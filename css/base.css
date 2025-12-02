@@ -1,6 +1,5 @@
 :root {
-    /* Design Tokens - Grid Unit */
-    --grid-unit: 4px;
+
 
     /* Design Tokens - Colors */
     --color-primary: #6F4E37; /* Coffee Brown */
@@ -28,13 +27,13 @@
     --color-footer-text: rgba(0, 0, 0, 0);
 
     /* Design Tokens - Spacing Scale (based on 4px grid) */
-    --space-xxs: calc(var(--grid-unit) * 1); /* 4px */
-    --space-xs: calc(var(--grid-unit) * 2); /* 8px */
-    --space-sm: calc(var(--grid-unit) * 4); /* 16px */
-    --space-md: calc(var(--grid-unit) * 6); /* 24px */
-    --space-lg: calc(var(--grid-unit) * 8); /* 32px */
-    --space-xl: calc(var(--grid-unit) * 12); /* 48px */
-    --space-xxl: calc(var(--grid-unit) * 16); /* 64px */
+    --space-xxs: 0.25rem; /* 4px */
+    --space-xs: 0.5rem; /* 8px */
+    --space-sm: 1rem; /* 16px */
+    --space-md: 1.5rem; /* 24px */
+    --space-lg: 2rem; /* 32px */
+    --space-xl: 3rem; /* 48px */
+    --space-xxl: 4rem; /* 64px */
     --space-massive: calc(var(--grid-unit) * 24); /* 96px */
 
     /* Design Tokens - Typography Scale (Modular Scale) */

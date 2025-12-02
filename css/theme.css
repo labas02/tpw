@@ -1,16 +1,4 @@
-/*
- * Pure CSS Theming for Dark Mode
- * This file uses CSS variables and the prefers-color-scheme media query.
- * The light mode is defined by the existing base.css and other component files.
- * This file only defines the dark mode overrides.
- */
 
-/*
- * Pure CSS Theming for Dark Mode
- * This file uses CSS variables and the prefers-color-scheme media query.
- * The light mode is defined by the existing base.css and other component files.
- * This file only defines the dark mode overrides.
- */
 
 @media (prefers-color-scheme: dark) {
     :root {
