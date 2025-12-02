@@ -1,6 +1,5 @@
 :root {
-    /* Design Tokens - Grid Unit */
-    --grid-unit: 4px;
+
 
     /* Design Tokens - Colors */
     --color-primary: #6F4E37; /* Coffee Brown */
@@ -28,14 +27,14 @@
     --color-footer-text: rgba(0, 0, 0, 0);
 
     /* Design Tokens - Spacing Scale (based on 4px grid) */
-    --space-xxs: calc(var(--grid-unit) * 1); /* 4px */
-    --space-xs: calc(var(--grid-unit) * 2); /* 8px */
-    --space-sm: calc(var(--grid-unit) * 4); /* 16px */
-    --space-md: calc(var(--grid-unit) * 6); /* 24px */
-    --space-lg: calc(var(--grid-unit) * 8); /* 32px */
-    --space-xl: calc(var(--grid-unit) * 12); /* 48px */
-    --space-xxl: calc(var(--grid-unit) * 16); /* 64px */
-    --space-massive: calc(var(--grid-unit) * 24); /* 96px */
+    --space-xxs: 0.25rem; /* 4px */
+    --space-xs: 0.5rem; /* 8px */
+    --space-sm: 1rem; /* 16px */
+    --space-md: 1.5rem; /* 24px */
+    --space-lg: 2rem; /* 32px */
+    --space-xl: 3rem; /* 48px */
+    --space-xxl: 4rem; /* 64px */
+    --space-massive: 6rem; /* 96px */
 
     /* Design Tokens - Typography Scale (Modular Scale) */
     --text-xs: 0.75rem; /* 12px */
@@ -63,10 +62,11 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--color-primary);
 }
 
-h1 { font-size: var(--text-massive); }
-h2 { font-size: var(--text-xxl); }
-h3 { font-size: var(--text-xl); }
-h4 { font-size: var(--text-lg); }
+/* Mobile-first typography - base styles for mobile */
+h1 { font-size: var(--text-xxl); }
+h2 { font-size: var(--text-xl); }
+h3 { font-size: var(--text-lg); }
+h4 { font-size: var(--text-md); }
 
 p {
     margin-bottom: var(--space-sm);
@@ -85,16 +85,16 @@ p {
 
 .section-description {
     text-align: center;
-    font-size: var(--text-md);
+    font-size: var(--text-base);
     color: var(--color-muted);
     margin-bottom: var(--space-xl);
 }
 
-/* Responsive adjustments for base typography */
-@media (max-width: 768px) {
-    h1 { font-size: var(--text-xxl); }
-    h2 { font-size: var(--text-xl); }
-    h3 { font-size: var(--text-lg); }
-    h4 { font-size: var(--text-md); }
-    .section-description { font-size: var(--text-base); }
+/* Progressive enhancement for larger screens (tablet and up) */
+@media (min-width: 769px) {
+    h1 { font-size: var(--text-massive); }
+    h2 { font-size: var(--text-xxl); }
+    h3 { font-size: var(--text-xl); }
+    h4 { font-size: var(--text-lg); }
+    .section-description { font-size: var(--text-md); }
 }
