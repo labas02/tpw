@@ -1,0 +1,139 @@
+
+Termín odevzdání
+
+    pátek 5.12.2025, 23:59 
+
+Bodová dotace (minimální hranice)
+10 bodů (min. 6 bodů)
+Způsob odevzdání
+Výlučně v e-kurzu prostřednictvím nástroje „odevzdání semestrálního projektu“.
+PŘEDMĚT PROJEKTU
+Semestrálním projektem „Komponentová knihovna webového rozhraní“ student dokazuje, že dokáže analyzovat grafický návrh, navrhnout a implementovat znovupoužitelné komponenty pomocí HTML a CSS s využitím systematického stylování (design tokens, typografická a spacing škála, barevná paleta, vrstvené CSS), a zároveň zajistit vizuální konzistenci, responzivitu a přístupnost webového rozhraní. Projekt sestává z analýzy, návrhu a implementace webových stránek.
+POŽADAVKY NA ŘEŠENÍ
+1. Obsah a struktura
+
+        Použití sémantických HTML5 elementů (header, nav, main, footer, section, article).
+        Konzistentní a přehledná organizace záhlaví, navigace, hlavní části a zápatí.
+        Navigace strukturovaná jako seznam, odkazy jasně označené a funkční.
+        Obsah je srozumitelný, aktuální (copyright/poslední aktualizace), bez gramatických chyb.
+        Domovská stránka poskytuje zajímavý obsah nad ohybem („above the fold“), včetně hero sekce.
+        Respektování doporučených zásad psaní pro web (nadpisy, odrážkové body, krátké odstavce).
+
+2. Systematický vizuální návrh
+
+        Použití typografické škály a jednotných velikostí textu.
+        Použití spacing škály (mezery mezi elementy) a grid unit pro konzistentní layout.
+        Barevná paleta s logickými názvy (design tokens) pro hlavní a neutrální barvy.
+        Systematické aplikování těchto tokenů napříč stránkou (typografie, barvy, spacing, radius).
+        Vizuální konzistence komponent a obsahu: kontrast, zarovnání, blízkost, rytmus a opakování.
+        Rovnováha mezi textem, obrazovými prvky a prázdným místem (white space).
+
+3. Komponentový přístup a CSS architektura
+
+        Správné rozdělení CSS do vrstev: reset, base, utilities, components, theming, případně layout/page.
+        Každá komponenta má minimální selektory a jasně definované styly.
+        Implementace modifikátorů pro varianty komponent (barva, velikost, rozložení).
+        Použití utility tříd pro dílčí doladění (např. margin, padding, flex, text-align).
+        Ukázky opakovaného použití komponent napříč stránkou.
+        Rozumné zanoření stylů (např. lokální nastavení p, h2 uvnitř komponenty) bez nadměrné specificity.
+
+4. Responzivita a přístupnost
+
+        Responzivní návrh pro mobil, tablet a desktop, bez horizontálního posouvání.
+        Použití media queries a/nebo container queries pro přizpůsobení komponent a layoutu.
+        Alternativní texty u obrázků a multimédií, barva není jediný nositel informace.
+        Odkazy a navigace konzistentně indikují stav (hover, focus, visited).
+        Test přístupnosti vhodným nástrojem (kontrast, čitelnost, struktura).
+
+5. Kvalita kódu a formální požadavky
+
+        Validní HTML a CSS (ověřeno validátorem).
+        Oddělení struktury (HTML) od stylování (CSS) a systematická organizace kódu.
+        Originální dílo, správné označení jako studentský projekt.
+        Projekt zveřejněn online, funguje v aktuální verzi Google Chrome.
+        Nepoužívá frameworky typu Bootstrap/Skeleton, JS knihovny jen pro doplňkové funkce.
+
+Přehled kritérií hodnocení
+
+    Obsah a struktura (20 %)
+
+        Použití sémantických prvků HTML5, přehledná organizace obsahu, vhodné použití záhlaví, navigace, hlavní části a zápatí.
+        Struktura přehledná a konzistentní, obsah bez chyb, srozumitelný pro cílové publikum.
+
+    Vizuální návrh a typografie (20 %)
+
+        Konzistence barev, typografie a vizuální rytmus, dodržení zásad webdesignu (kontrast, opakování, blízkost, zarovnání).
+        Barevné schéma a typografická škála aplikované pomocí design tokens.
+
+    Komponentový přístup a CSS architektura (30 %)
+
+        Rozdělení stylů do vrstev (reset, base, utilities, components, theming, případně layout/page).
+        Návrh a implementace komponent včetně variant pomocí modifikátorů.
+        Ukázky opakovaného použití komponent v projektu.
+
+    Responzivita a přístupnost (20 %)
+
+        Návrh pro různá zařízení (mobil, tablet, desktop) pomocí media queries nebo container queries.
+        Splnění základních pravidel přístupnosti (kontrast, alternativní texty, barva není jediný nositel informace).
+
+    Kvalita kódu a formální požadavky (10 %)
+
+        Validní HTML a CSS, dodržení doporučených postupů a oddělení obsahu od stylování.
+        Originální dílo, řádné označení jako studentský projekt, zveřejnění online (nejlépe na lide.uhk.cz, lze i jinde).
+
+Checklist pro studenty
+Povinné součásti
+Student musí tyto prvky vždy implementovat a ověřit jejich funkčnost:
+Struktura a obsah
+
+    Elementy header, nav, main, footer jsou použity sémanticky.
+    Navigace obsahuje jasně označené odkazy a je strukturována jako seznam (ul > li > a).
+    Hero sekce s výrazným titulkem nad ohybem stránky.
+    Footer obsahuje: copyright, datum poslední aktualizace, kontaktní e-mail.
+    Každá stránka obsahuje disclaimer, který informuje návštevníka stránek, že byly vytvořeny v rámci studentského zápočtového projektu, jejich obsah je smyšlený a nepředstavuje skutečnou nabídku produktu či služby. Disclaimer je nastylován tak, aby byl nepřehlédnutelný, od ostatního obsahu se výrazně liší zejména barvou, fontem, velikostí písma, umístěním a rozložením.
+
+Komponenty a modifikátory
+
+    Navrženy a implementovány alespoň 3–5 komponent (např. karty, tlačítka, info-boxy).
+    Každá komponenta má modifikátory pro varianty (barva, velikost, layout).
+    Komponenty jsou použity opakovaně na stránce (demonstrace znovupoužitelnosti).
+
+CSS vrstvy
+
+    Rozdělení stylů do vrstev: reset, base, utilities, components, theming (volitelně layout/page).
+    Systematické použití design tokenů: typografie, spacing, grid unit, barevná paleta, radiusy.
+
+Responzivita a přístupnost
+
+    Layout a komponenty fungují na mobilu, tabletu i desktopu.
+    Navigace má responzivní variantu s hamburger menu.
+    Obsah je čitelný a přístupný: kontrast, alternativní texty, barva není jediný nositel informace.
+
+Povinný prvek: výběr návrhového vzoru
+Student si musí povinně vybrat alespoň jeden návrhový vzor, který následně implementuje komponentovým způsobem.
+Seznam návrhových vzorů (UI patterns):
+
+    Dashboard – panely s klíčovými metrikami, statistiky, grafy (bez JS funkcionality).
+    Recenze / hodnocení – seznam uživatelských recenzí s hvězdičkami, jméno recenzenta, datum.
+    E-commerce produktová karta – obrázek produktu, název, cena, tlačítko akce.
+    Portfolio / galerie – vizuální prezentace obrázků nebo projektů.
+    Článkový seznam / blog – seznam článků s titulem, náhledovým textem a odkazem.
+    Kontakt / info box – sekce s kontaktními informacemi a mapkou.
+
+Pozn.: student může kombinovat více vzorů, ale minimálně jeden musí být implementován.
+Doporučené prvky
+Student může tyto prvky implementovat pro zvýšení kvality a komplexnosti:
+
+    Volitelné komponenty: formuláře, galerie, seznamy recenzí, dashboard panely.
+    Varianty komponent: světlý/tmavý motiv, malé/velké verze, horizontální/vertikální rozložení.
+    Více interaktivních efektů (pouze CSS: hover, focus, aktivní stav).
+    Použití container queries pro jemnější responzivitu komponent.
+
+Volitelné prvky
+
+    Pokročilé layouty pomocí grid nebo flex kombinací.
+    Dynamické šablony s <template> a generování obsahu z datového pole (bez JS funkcionality).
+    Dodatečné vizuální ozvláštnění komponent (stíny, přechody, animace CSS).
+
+ODEVZDÁNÍ PROJEKTU
+Vyplňte dokumentaci k projektu, projekt i dokumentaci (viz Dokumentace semestrálního projektu) zabalte do jediného souboru ve formátu Prijmeni_Jmeno.ZIP, a odevzdejte v e-kurzu.
